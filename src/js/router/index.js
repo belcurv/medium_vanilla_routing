@@ -63,7 +63,7 @@ export default class Router {
     // Call the route's controller, passing in its template and any subRoute.
     if (el && route.controller) {
       route.controller(el, route.template, subRoute);
-      return route;
+      return true;
     }
 
     return false;
