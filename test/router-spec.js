@@ -35,6 +35,10 @@ describe('Router', function() {
     router     = new Router();
   });
 
+  // reset global object after all tests
+  after(function() {
+    delete global.location;
+  });
 
   describe('instances', function() {
     
